@@ -13,7 +13,7 @@ cd quick-detector
 #### Option #1: Setup Python venv with Conda
 
 - Make sure you first have Conda installed
-- Create a new conda virtual env with the requirements:
+- Create a new conda virtual env:
 ```bash
 # You can replace "detector" by any name you like
 conda create --name detector python=3.12.1
