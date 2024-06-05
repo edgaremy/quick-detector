@@ -3,16 +3,14 @@ Apply detection model to quickly detect any Arthropod on images
 
 ## Installation
 
-##### Clone repository
+#### Clone repository
 
 ```bash
 git clone https://github.com/edgaremy/quick-detector.git
-```
-```bash
 cd quick-detector
 ```
 
-##### Option #1: Setup Python venv with Conda
+#### Option #1: Setup Python venv with Conda
 
 - Make sure you first have Conda installed
 - Create a new conda virtual env with the requirements:
@@ -29,13 +27,13 @@ conda activate detector
 conda deactivate
 ```
 
-##### Option #2: Use already existing Python venv
+#### Option #2: Use already existing Python venv
 
 Install requirements with pip:
 ```bash
 pip install -r requirements.txt
 ```
-##### Adding custom model
+#### Adding custom model
 
 The model weights used in this code are not available on this repo. We recommend adding them manually in the `/model` directory.
 
