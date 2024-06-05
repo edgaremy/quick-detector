@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 #### Adding custom model
 
-The model weights used in this code are not available on this repo. We recommend adding them manually in the `/model` directory.
+The model weights used are stored in the `/model` folder. We recommend adding any other custom weights here.
 
 ## Usage
 
