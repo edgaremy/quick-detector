@@ -16,9 +16,14 @@ cd quick-detector
 - Create a new conda virtual env with the requirements:
 ```bash
 # You can replace "detector" by any name you like
-conda create --name detector --file requirements.txt
+conda create --name detector python=3.12.1
 ```
-- You can now activate the venv whenever you want to use it, and deactivate it when you're done:
+- You can now activate the venv, and install the requirements with pip:
+```bash
+pip install -r requirements.txt
+```
+
+The environment is now ready ! Note that you will need to activate the venv whenever you want to use it (and deactivate it when you're done):
 ```bash
 # Activate the new venv:
 conda activate detector
