@@ -44,4 +44,4 @@ The model weights used are stored in the `/model` folder. We recommend adding an
 
 ## Usage
 
-TODO
+The main script is `detect.py`.
