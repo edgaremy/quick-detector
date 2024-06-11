@@ -44,4 +44,4 @@ The model weights used are stored in the `/model` folder. We recommend adding an
 
 ## Usage
 
-The main script is `detect.py`.
+Two script are currently available for direct use. The first is `detect.py` for quickly detecting every arthropod on each frame in a folder. The second is `track.py` which tries to detect arthropods by also keeping track of each individual while going through each frame.
