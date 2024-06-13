@@ -1,3 +1,8 @@
+
+
+![](resources/image21.jpg)            |  ![](resources/image10.jpg) | ![](resources/image12.jpg)
+:-------------------------:|:-------------------------:|:-------------------------:
+
 # Quick Arthropod Detector
 Apply detection model to quickly detect any Arthropod on images
 
