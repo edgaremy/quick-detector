@@ -22,7 +22,7 @@ class NoLabelDataset(torch.utils.data.Dataset):
         image = read_image(img_path)
         if self.transform:
             image = self.transform(image)
-        return image, 0 # label is always 0
+        return image, 0, img_path # label is always 0
 
     def __len__(self):
         return len(self.img_dir)

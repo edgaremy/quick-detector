@@ -11,7 +11,7 @@ folder_path = "examples/Entomoscope_examples/"
 dataloader = create_dataloader(folder_path, crop_profile="Entomoscope")
 
 results = []
-for images, _ in dataloader:
+for images, _, _ in dataloader:
 
     # Perform inference using YOLO model
     predictions = model.predict(images, show=False, save=True, save_txt=False)
