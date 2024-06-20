@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import os
+import shutil
 
 from dataloading import create_dataloader
 
@@ -34,7 +35,7 @@ for b, result in enumerate(results): # for each batch
     for prediction, img_path in zip(result, paths[b]): # for each image in the batch
         if prediction.boxes.cls.cpu().numpy().shape[0] > 0: # if somthing is detected
             # copy the image to the output folder
-            os.system(f"cp {img_path} {output_folder}")
+            shutil.copy(img_path, output_folder)
             number_of_kept_frames += 1
             
 
