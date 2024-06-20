@@ -11,6 +11,8 @@ import numpy as np
 class NoLabelDataset(torch.utils.data.Dataset):
     def __init__(self, dataset_path, transform=None):
         self.img_dir = os.listdir(dataset_path)
+        # Eclude non png and jpg/jpeg files
+        self.img_dir = [f for f in self.img_dir if f.endswith(".png") or f.endswith(".jpg") or f.endswith(".jpeg")]
         self.img_dir.sort()
         for i in range(len(self.img_dir)):
             self.img_dir[i] = os.path.join(dataset_path, self.img_dir[i])
@@ -30,6 +32,8 @@ class NoLabelDataset(torch.utils.data.Dataset):
 class NoLabelDatasetCV2(torch.utils.data.Dataset):
     def __init__(self, dataset_path, transform=None):
         self.img_dir = os.listdir(dataset_path)
+        # Eclude non png and jpg/jpeg files
+        self.img_dir = [f for f in self.img_dir if f.endswith(".png") or f.endswith(".jpg") or f.endswith(".jpeg")]
         self.img_dir.sort()
         for i in range(len(self.img_dir)):
             self.img_dir[i] = os.path.join(dataset_path, self.img_dir[i])
