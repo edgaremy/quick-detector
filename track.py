@@ -15,7 +15,7 @@ folder_path = "./examples/Entomoscope_sequence/"
 dataloader = create_dataloader(folder_path, crop_profile="Entomoscope", batch_size=BATCH_SIZE, use_cv2=True)
 
 # Load the YOLOv8 model
-model = YOLO("models/arthropod_dectector_wave11_best.pt") # load .pt file
+model = YOLO("models/arthropod_dectector_wave13_best.pt") # load .pt file
 
 trackings = []
 for image, _, image_dir in dataloader:

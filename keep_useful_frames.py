@@ -9,7 +9,7 @@ output_folder = "./output"
 os.makedirs(output_folder, exist_ok=True)
 
 # Load a model
-model = YOLO("models/arthropod_dectector_wave11_best.pt") # load .pt file
+model = YOLO("models/arthropod_dectector_wave13_best.pt") # load .pt file
 
 # Load images from a folder
 folder_path = "examples/Entomoscope_examples/"
