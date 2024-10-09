@@ -2,7 +2,7 @@ import cv2
 import sys
 
 # This script can be use to find easily the left and right coordinates
-# in order to perform a prliminary horizontal crop of the images.
+# in order to perform a preliminary horizontal crop of the images.
 
 DISPLAY_SIZE = (1000, 800)
 click_counter = [0]
